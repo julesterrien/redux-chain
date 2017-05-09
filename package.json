@@ -1,6 +1,6 @@
 {
   "name": "redux-chain",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Chain multiple actions in a single dispatch call",
   "repository": {
     "type": "git",
