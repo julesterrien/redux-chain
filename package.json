@@ -1,0 +1,29 @@
+{
+  "name": "redux-chain",
+  "version": "0.0.1",
+  "description": "Chain multiple actions in a single dispatch call",
+  "repository": "https://github.com/julesterrien/redux-chain",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "test": "npm run build && mocha --opts .mocharc ./tests/index.js"
+  },
+  "keywords": [
+    "nova",
+    "redux",
+		"chain",
+		"redux-chain"
+  ],
+  "author": "Jules Terrien <jules@neednova.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
