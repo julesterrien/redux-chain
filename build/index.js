@@ -2,7 +2,6 @@ const CHAIN = 'CHAIN';
 
 /**
 * chainMiddleware
-* A redux middleware which needs to be added to your store if you want to use chain()
 */
 export const chainMiddleware = ({ dispatch, getState }) => next => action => {
 	if (action.type === CHAIN) {
