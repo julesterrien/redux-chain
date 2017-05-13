@@ -2,9 +2,10 @@ const CHAIN = 'CHAIN';
 
 /**
 * chainMiddleware
-* Add this middleware to your redux store to use the chain action
+* Intercepts the action creator of type 'CHAIN'
+* Dispatch each action creator passed as arguments to chain()
 */
-export const chainMiddleware = ({ dispatch, getState }) => next => (action) => {
+export const chainMiddleware = () => next => (action) => {
 	if (action.type === CHAIN) {
 		if (!Array.isArray(action.actions)) {
 			return next(action);
